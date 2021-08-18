@@ -1,0 +1,15 @@
+Key Questions
+1. The doc says "Focus on making meainingful intpretations". Usually that means a verbal summary that explains the prediction on one or a few variables. Is that what is desired? Or if not, then do the stakeholders want something auditable (something that could be admissible in a lawsuit) even if the explanation is complex?  (e.g. some tree-based algorithms can show the logic tree of how the model predicts).
+2. The labeled column (adjustedLOS) has 4 decimal places. Depending on question 1 and other work, it may be more useful to convert the prediction from a regression (continuous data) to classification. What it the smallest unit of time that could constrain this prediction? Integer days, half days, hours? (e.g. if a lab closes at 5 PM or staff availability is constrained on weekends - these things could reduce the usefulness of more precise prediction durations.)
+3. There appears to be no anonymized patient id so it could be that a patient appears more than once in this dataset. Encounterid seems to be the id for a person showing up at some point at a hospital.
+
+Known Challenges:
+Sparse data
+correlated features 
+Time needed to validate data integrity
+Depending on question 1 - possibly major feature reduction
+Clustering prediction failures
+Patient history is greatly obscured (i.e. the history is usually some count of things happening in some past time period)
+
+Other Observations:
+200+ variables, 32K samples - at first look there may be enough data for reliable model learning.
