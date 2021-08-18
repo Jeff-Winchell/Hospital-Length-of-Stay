@@ -1,0 +1,4 @@
+1. Look at list of 200+ variable names to get general understanding of predictors.
+2. Get domains of each predictor (boolean, whole number, real, polytomous) and min-max values
+3. Put data into SQL Server for ease of checking data
+4. Get Rsquared for each predictor
