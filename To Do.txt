@@ -1,4 +1,9 @@
-1. Look at list of 200+ variable names to get general understanding of predictors.
-2. Get domains of each predictor (boolean, whole number, real, polytomous) and min-max values
+X 1. Look at list of 200+ variable names to get general understanding of predictors.
+2. Get domains of each predictor (boolean, whole number, real, polytomous) and min-max values - Row 16 has almost every column as non-null.
 3. Put data into SQL Server for ease of checking data
 4. Get Rsquared for each predictor
+5. - Is actualLOS the training variable or adjustedLOS
+6. Admit vs Visit vs Encounter?
+7. Issue with history mean stats - no idea how many data points created the mean or their temporal spacing
+8. Consider identifying and removing outliers.
+9. How to deal with substantial missing data

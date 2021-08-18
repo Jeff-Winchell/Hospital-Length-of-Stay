@@ -1,0 +1,62 @@
+age, marital status, gender, race
+Admit/Visit/Encounter Count
+Length of Stay
+
+Source of Admission - EMD/MP/Hospital Transfer/Other 
+charlson Comorbidity Index
+bmi
+adjusted LOS
+
+procedures
+Chronic Condition
+Dementia
+Acute Hypothyroidism
+Acute Myocardial Infarction
+Alzheimers Disease
+Anemia
+Asthma
+AFib
+Cataract
+COPD
+Depression
+Diabetes
+Heart Failure
+Hyperlipidemia
+Ischemic Heart Disease
+Osteoporosis
+Breast Cancer
+Colorectal Cancer
+Prostate Cancer
+Lung Cancer
+Endometrial Cancer
+
+
+Temperature
+Heart Rate
+Albumin
+Creatinine
+Glucose
+Sodium
+Bilirubin
+White Blood Cell Count
+Serum Bicarbonate
+Potassium
+Hematocrit
+Alkaline Phosphatase
+HBA1c
+Neutrophils
+AST
+ALT
+Lactate
+INR
+TroponinIHS
+
+Systolic Blood Pressure
+Diastolic Blood Pressure
+Respiration
+Arterial Pressure
+Oxygen Saturation
+PaO2FiO2Ratio
+
+cci Weight
+magnitude

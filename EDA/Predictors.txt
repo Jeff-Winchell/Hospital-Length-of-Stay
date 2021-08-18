@@ -1,12 +1,12 @@
-encounterID
-age
-edVisitCountPast3months
-admissionMonth
-admissionBetweenThuAndSat
-edTimeBeforeAdmission
-firstTemperatureReadingInED
-meanLOSPast24months
-inpatientAdmitCountPast3months
+encounterID,Int
+age,Int
+edVisitCountPast3months,Int
+admissionMonth,TinyInt
+admissionBetweenThuAndSat,Bit
+edTimeBeforeAdmission,Real
+firstTemperatureReadingInED,Real
+meanLOSPast24months,Real
+inpatientAdmitCountPast3months,
 meanTemperaturePast12months
 inpatientAdmitCountPast6months
 inpatientAdmitCountPast12months
@@ -216,4 +216,3 @@ isethnicityBlackOrAfricanAmerican
 isethnicityHispanicOrLatino
 isethnicityAsian
 proceduresCount
-
