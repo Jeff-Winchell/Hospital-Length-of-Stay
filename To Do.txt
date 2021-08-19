@@ -1,11 +1,24 @@
 X 1. Look at list of 200+ variable names to get general understanding of predictors.
 X 2. Get domains of each predictor (boolean, whole number, real, polytomous) and min-max values - Row 16 has almost every column as non-null.
 X 3. Put data into SQL Server for ease of checking data
-4. Get Rsquared for each predictor
+X 4. Get Rsquared for each predictor
 X 5. - Is actualLOS the training variable or adjustedLOS
 6. Admit vs Visit vs Encounter?
 7. Issue with history mean stats - no idea how many data points created the mean or their temporal spacing
-8. Consider identifying and removing outliers.
+8. Consider identifying and removing outliers - all are in nullable columns so only do when running nullable columns model and for features I know nothing about remove anything 3 standard deviations from the mean.
 9. How to deal with substantial missing data
-10.primaryDiagnosisChronicCondition is a real number? Why?
+10. primaryDiagnosisChronicCondition is a real number? Why?
 11. Duplicate EncounterId - no primary key in data
+12. What about normalization of variables (depends on model - logistic regression, SVM, neural net are most likely classification models I'd use that need it)
+
+Coefficient of Determination is low for all the non-null predictors other than procedures count (which is .2) Running model #13 has significant risk of poor accuracy.
+Possibly any tree will overfit with such low coefficient of determination numbers.
+
+13. Run model with only non-null columns (47 predictors) and only records whose encounterid is unique
+14. Run model with null columnns (except replace impossible values with nulls, possibly replace 3 standard deviation outliers with nulls
+15. Run model without tossing anything (other than replacements mentioned in #14)
+16. Run model in non C5 models
+17. Run unsupervised clustering models on false predictions (whatever false is determined when dealing with integral days of 0 to 20)
+
+Beyond Scope
+Figure out impossible values on all the lab test results - and if like Fahrenheit vs Celsius reading mistake in temperatures, correct values where possible.

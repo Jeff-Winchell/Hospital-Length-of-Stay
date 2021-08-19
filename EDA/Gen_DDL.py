@@ -15,7 +15,7 @@ with open('Domain_Sample.csv') as Input:
             else:
                 try:
                     foo=float(Data[Column_Number])
-                    DDL+='\t'+Column_Name+' Real,\n'
+                    DDL+='\t'+Column_Name+' Float,\n'
                 except:
                     DDL+='\t'+Column_Name+' ??'+Data[Column_Number]+',\n'
         Output.write(DDL[:-2]+'\n)')
