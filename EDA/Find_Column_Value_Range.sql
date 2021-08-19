@@ -1,6 +1,6 @@
 Set ANSI_Warnings Off
 Create Table #MINMAX (Column_Name SysName,Min_Value Real Not Null,Max_Value Real Not Null,Nullable Bit Not Null)
-Declare MinMax Cursor For Select Column_Name,Case When Is_Nullable='NO' Then '0' Else '1' End From Hospital.Information_Schema.Columns Where Column_Name Not In ('encounterid') And Columns.DATA_TYPE In ('Real','Int') 
+Declare MinMax Cursor For Select Column_Name,Case When Is_Nullable='NO' Then '0' Else '1' End From Hospital.Information_Schema.Columns Where Column_Name Not In ('encounterid') And Columns.DATA_TYPE In ('Float','Int','TinyInt') 
 	Order By COLUMNS.ORDINAL_POSITION
 Declare @Column_Name SysName,@Is_Nullable Char(1)
 Open MinMax

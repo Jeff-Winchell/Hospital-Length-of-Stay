@@ -11,6 +11,8 @@ X 5. - Is actualLOS the training variable or adjustedLOS
 11. Duplicate EncounterId - no primary key in data
 12. What about normalization of variables (depends on model - logistic regression, SVM, neural net are most likely classification models I'd use that need it)
 
+ProcedureCount is only known post discharge (probably true)
+
 Coefficient of Determination is low for all the non-null predictors other than procedures count (which is .2) Running model #13 has significant risk of poor accuracy.
 Possibly any tree will overfit with such low coefficient of determination numbers.
 
