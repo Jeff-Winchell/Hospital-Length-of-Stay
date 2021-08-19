@@ -16,6 +16,10 @@ ProcedureCount is only known post discharge (probably true)
 Coefficient of Determination is low for all the non-null predictors other than procedures count (which is .2) Running model #13 has significant risk of poor accuracy.
 Possibly any tree will overfit with such low coefficient of determination numbers.
 
+Update LOS.yml with R needs and remove notebook.
+
+No apparent variables about procedures
+
 13. Run model with only non-null columns (47 predictors) and only records whose encounterid is unique
 14. Run model with null columnns (except replace impossible values with nulls, possibly replace 3 standard deviation outliers with nulls
 15. Run model without tossing anything (other than replacements mentioned in #14)
@@ -24,4 +28,3 @@ Possibly any tree will overfit with such low coefficient of determination number
 
 Beyond Scope
 Figure out impossible values on all the lab test results - and if like Fahrenheit vs Celsius reading mistake in temperatures, correct values where possible.
-make search for key (the reverse for loop) in Count_C50_Tree_Depth a regex search
