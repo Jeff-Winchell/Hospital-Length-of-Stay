@@ -1,5 +1,5 @@
 --The following command generated the list of subsequent commands (that were copied from its output)
---Set NoCount On; Select 'If Not Exists(Select * From Hospital..Patient_Summary Where '+Column_Name+' Is Null) Print '''+Column_Name+'''' From Hospital.Information_Schema.Columns Where Column_Name Not In ('actualLOS','AdjustedLOS','encounterid') Order By COLUMNS.ORDINAL_POSITION
+--Set NoCount On; Select 'If Not Exists(Select * From Hospital..Patient_Summary Where '+Column_Name+' Is Null) Print '''+Column_Name+'''' From Hospital.Information_Schema.Columns Where Column_Name Not In ('actualLOS','AdjustedLOS','encounterid','procedurescount') Order By COLUMNS.ORDINAL_POSITION
 
 If Not Exists(Select * From Hospital..Patient_Summary Where age Is Null) Print 'age'
 If Not Exists(Select * From Hospital..Patient_Summary Where edVisitCountPast3months Is Null) Print 'edVisitCountPast3months'
